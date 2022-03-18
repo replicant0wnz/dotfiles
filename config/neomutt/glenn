@@ -1,0 +1,19 @@
+set realname = "Glenn E. Bailey III""
+set imap_user = "glenn@dronemusic.co"
+set imap_pass = "XnVVmhGwGWEXyXAfu83DUw"
+set from="glenn@dronemusic.co"
+
+set ssl_force_tls = yes
+set send_charset = "us-ascii:utf-8"
+set folder = "imap://localhost:1143"
+set spoolfile = "imap://localhost:1143/INBOX"
+set postponed = "imap://localhost:1143/[Protonmail]/Drafts"
+set mbox = "imap://localhost:1143/[Protonmail]/All Mail"
+#set header_cache = "~/.mutt/cache/headers"
+#set message_cachedir = "~/.mutt/cache/bodies"
+#set certificate_file = "~/.mutt/certificates"
+set imap_keepalive = 900
+set timeout=10
+set use_from = yes
+set use_domain
+set imap_check_subscribed

@@ -1,0 +1,42 @@
+set sidebar_visible = yes
+set sidebar_format = '%D%* %?N?%N/?%S'
+unset help
+
+# status bar, date format, finding stuff etc.
+set status_chars = " *%A"
+set status_format = "[ Folder: %f ] [%r%m messages%?n? (%n new)?%?d? (%d to delete)?%?t? (%t tagged)? ]%>─%?p?( %p postponed )?"
+set date_format = "%d.%m.%Y %H:%M"
+set sort = threads
+set sort_aux = reverse-last-date-received
+set uncollapse_jump
+set sort_re
+set reply_regexp = "^(([Rr][Ee]?(\[[0-9]+\])?: *)?(\[[^]]+\] *)?)*"
+set quote_regexp = "^( {0,4}[>|:#%]| {0,4}[a-z0-9]+[>|]+)+"
+set send_charset = "utf-8:iso-8859-1:us-ascii"
+set charset = "utf-8"
+set arrow_cursor = "no" # Change `color indicator` depending 
+#set sort = reverse-threads
+set status_format = "%f"
+set date_format = "%m%d"
+#set index_format = "%Z %D %-15.15n %s"
+set index_format="%4C %{%b %d} %-15.15L (%?l?%4l&%4c?) %s"
+
+
+# Prefer plain text to html
+alternative_order multipart/mixed multipart/related text/plain
+# Consult mime.types for determining types of attachments
+mime_lookup applications/octet-stream
+auto_view text/html
+bind index,pager \Cp sidebar-prev 
+bind index,pager \Cn sidebar-next
+bind index,pager \Co sidebar-open
+
+# notifications
+set new_mail_command="notify-send -i '/home/replicant/.config/neomutt/protonmail.png' -a Mail 'New Email in %f' '%n new messages, %u unread.' &"
+
+# Disable auto_view line
+set display_filter = 'grep -v "\\[-- Autoview using"'
+
+source /home/replicant/.config/neomutt/dracula.muttrc
+source /home/replicant/.config/neomutt/glenn
+source /home/replicant/.config/neomutt/credentials
