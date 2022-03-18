@@ -75,6 +75,12 @@ dotfiles:
   f_terraform.zsh:
     src: oh-my-zsh/custom/terraform.zsh
     dst: ~/.oh-my-zsh/custom/terraform.zsh
+  f_plug.vim:
+    src: config/nvim/autoload/plug.vim
+    dst: ~/.config/nvim/autoload/plug.vim
+  f_onedark.vim:
+    src: config/nvim/themes/onedark.vim
+    dst: ~/.config/nvim/themes/onedark.vim
 profiles:
   gondor:
     dotfiles:
@@ -100,3 +106,5 @@ profiles:
     - f_mail.zsh
     - f_path.zsh
     - f_terraform.zsh
+    - f_plug.vim
+    - f_onedark.vim
