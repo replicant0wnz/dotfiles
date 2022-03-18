@@ -47,6 +47,34 @@ dotfiles:
   f_tmux.conf:
     src: tmux.conf
     dst: ~/.tmux.conf
+  f_zshrc:
+    src: zshrc
+    dst: ~/.zshrc
+    chmod: '644'
+  f_bat.zsh:
+    src: oh-my-zsh/custom/bat.zsh
+    dst: ~/.oh-my-zsh/custom/bat.zsh
+  f_bin.zsh:
+    src: oh-my-zsh/custom/bin.zsh
+    dst: ~/.oh-my-zsh/custom/bin.zsh
+  f_dotdrop.zsh:
+    src: oh-my-zsh/custom/dotdrop.zsh
+    dst: ~/.oh-my-zsh/custom/dotdrop.zsh
+  f_golang.zsh:
+    src: oh-my-zsh/custom/golang.zsh
+    dst: ~/.oh-my-zsh/custom/golang.zsh
+  f_kubectl.zsh:
+    src: oh-my-zsh/custom/kubectl.zsh
+    dst: ~/.oh-my-zsh/custom/kubectl.zsh
+  f_mail.zsh:
+    src: oh-my-zsh/custom/mail.zsh
+    dst: ~/.oh-my-zsh/custom/mail.zsh
+  f_path.zsh:
+    src: oh-my-zsh/custom/path.zsh
+    dst: ~/.oh-my-zsh/custom/path.zsh
+  f_terraform.zsh:
+    src: oh-my-zsh/custom/terraform.zsh
+    dst: ~/.oh-my-zsh/custom/terraform.zsh
 profiles:
   gondor:
     dotfiles:
@@ -63,3 +91,12 @@ profiles:
     - f_signify.vim
     - f_nerdtree.vim
     - f_tmux.conf
+    - f_zshrc
+    - f_bat.zsh
+    - f_bin.zsh
+    - f_dotdrop.zsh
+    - f_golang.zsh
+    - f_kubectl.zsh
+    - f_mail.zsh
+    - f_path.zsh
+    - f_terraform.zsh
