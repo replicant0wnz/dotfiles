@@ -1,0 +1,61 @@
+config:
+  backup: true
+  banner: true
+  create: true
+  dotpath: .
+  keepdot: false
+  link_dotfile_default: nolink
+  link_on_import: nolink
+  longkey: false
+dotfiles:
+  f_neomuttrc:
+    src: config/neomutt/neomuttrc
+    dst: ~/.config/neomutt/neomuttrc
+  f_glenn:
+    src: config/neomutt/glenn
+    dst: ~/.config/neomutt/glenn
+  f_dracula.muttrc:
+    src: config/neomutt/dracula.muttrc
+    dst: ~/.config/neomutt/dracula.muttrc
+  f_init.vim:
+    src: config/nvim/init.vim
+    dst: ~/.config/nvim/init.vim
+  f_plugins.vim:
+    src: config/nvim/vim-plug/plugins.vim
+    dst: ~/.config/nvim/vim-plug/plugins.vim
+  f_settings.vim:
+    src: config/nvim/general/settings.vim
+    dst: ~/.config/nvim/general/settings.vim
+  f_keyboard.vim:
+    src: config/nvim/general/keyboard.vim
+    dst: ~/.config/nvim/general/keyboard.vim
+  f_dogrun.vim:
+    src: config/nvim/themes/dogrun.vim
+    dst: ~/.config/nvim/themes/dogrun.vim
+  f_coc.vim:
+    src: config/nvim/plug-config/coc.vim
+    dst: ~/.config/nvim/plug-config/coc.vim
+  f_airline.vim:
+    src: config/nvim/themes/airline.vim
+    dst: ~/.config/nvim/themes/airline.vim
+  f_signify.vim:
+    src: config/nvim/plug-config/signify.vim
+    dst: ~/.config/nvim/plug-config/signify.vim
+  f_nerdtree.vim:
+    src: config/nvim/plug-config/nerdtree.vim
+    dst: ~/.config/nvim/plug-config/nerdtree.vim
+profiles:
+  gondor:
+    dotfiles:
+    - f_neomuttrc
+    - f_glenn
+    - f_dracula.muttrc
+    - f_init.vim
+    - f_plugins.vim
+    - f_settings.vim
+    - f_keyboard.vim
+    - f_dogrun.vim
+    - f_coc.vim
+    - f_airline.vim
+    - f_signify.vim
+    - f_nerdtree.vim
