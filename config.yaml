@@ -44,6 +44,9 @@ dotfiles:
   f_nerdtree.vim:
     src: config/nvim/plug-config/nerdtree.vim
     dst: ~/.config/nvim/plug-config/nerdtree.vim
+  f_tmux.conf:
+    src: tmux.conf
+    dst: ~/.tmux.conf
 profiles:
   gondor:
     dotfiles:
@@ -59,3 +62,4 @@ profiles:
     - f_airline.vim
     - f_signify.vim
     - f_nerdtree.vim
+    - f_tmux.conf
