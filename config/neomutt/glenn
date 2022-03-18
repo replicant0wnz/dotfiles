@@ -1,6 +1,4 @@
 set realname = "Glenn E. Bailey III""
-set imap_user = "glenn@dronemusic.co"
-set imap_pass = "XnVVmhGwGWEXyXAfu83DUw"
 set from="glenn@dronemusic.co"
 
 set ssl_force_tls = yes
